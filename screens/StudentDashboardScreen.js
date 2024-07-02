@@ -15,17 +15,17 @@ import {
 } from "@react-navigation/drawer";
 import User from "./../assets/person.png";
 import Contact from "./Contact";
-import FarmerLocationScreen from "./customer/FarmerLocationScreen";
-import CropsScreen from "./customer/CropsScreen";
-import Home from "./customer/Home";
+import FarmerLocationScreen from "./student/FarmerLocationScreen";
+import CropsScreen from "./student/CropsScreen";
+import Home from "./student/Home";
 import RateApp from "./RateApp";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Button from "../src/components/Button";
 import ShareAppScreen from "./ShareAppScreen";
 var url = base.BASE_URL;
 import * as base from "../env";
-import cartScreen from "./customer/cartScreen";
-import ProductScreen from "./customer/ProductScreen";
+import cartScreen from "./student/cartScreen";
+import ProductScreen from "./student/ProductScreen";
 
 const Drawer = createDrawerNavigator();
 

@@ -13,17 +13,17 @@ import {
   createDrawerNavigator,
 } from "@react-navigation/drawer";
 import User from "./../assets/person.png";
-import UserCrops from "./farmer/UserCrops";
+import UserCrops from "./teacher/UserCrops";
 import Contact from "./Contact";
-import Home from "./farmer/Home";
+import Home from "./teacher/Home";
 import RateApp from "./RateApp";
-import CropsScreen from "./farmer/CropsScreen";
-import ProductScreen from "./farmer/ProductScreen";
+import CropsScreen from "./teacher/CropsScreen";
+import ProductScreen from "./teacher/ProductScreen";
 import Button from "../src/components/Button";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import ShareAppScreen from "./ShareAppScreen";
 import * as base from "../env";
-import IssuesScreen from "./farmer/IssuesScreen";
+import IssuesScreen from "./teacher/IssuesScreen";
 var url = base.BASE_URL;
 
 const Drawer = createDrawerNavigator();

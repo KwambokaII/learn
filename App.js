@@ -5,12 +5,12 @@ import LocationScreen from './screens/LocationScreen';
 import RegistrationScreen from './screens/RegisterScreen';
 import UserTypeSelectionScreen from './screens/UserTypeSelectionScreen';
 import LoginScreen from './screens/LoginScreen';
-import CustomersDashboardScreen from './screens/CustomerDashboardScreen';
-import FarmerDashboardScreen from './screens/FarmerDashboardScreen';
+import CustomersDashboardScreen from './screens/StudentDashboardScreen';
+import FarmerDashboardScreen from './screens/TeacherDashboardScreen';
 import ResetPasswordScreen from './screens/ResetPasswordScreen';
 import AdminDashboardScreen from './screens/AdminDashboaerdScreen';
 import AboutScreen from './screens/AboutScreen';
-import SupportDashboardScreen from './screens/SupportDashboardScreen';
+// import SupportDashboardScreen from './screens/SupportDashboardScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -63,11 +63,7 @@ const App = () => {
           component={AdminDashboardScreen}
           options={{ title: 'Dashboard', headerShown: false }}
         />
-          <Stack.Screen
-          name="Special"
-          component={SupportDashboardScreen}
-          options={{ title: 'Dashboard', headerShown: false }}
-        />
+          
      
       </Stack.Navigator>
     </NavigationContainer>
