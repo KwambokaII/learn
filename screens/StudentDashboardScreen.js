@@ -16,7 +16,7 @@ import {
 import User from "./../assets/person.png";
 import Contact from "./Contact";
 import FarmerLocationScreen from "./student/FarmerLocationScreen";
-import CropsScreen from "./student/CropsScreen";
+import CropsScreen from "./student/Courses";
 import Home from "./student/Home";
 import RateApp from "./RateApp";
 import AsyncStorage from "@react-native-async-storage/async-storage";
