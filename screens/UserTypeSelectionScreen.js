@@ -12,18 +12,18 @@ import { passwordValidator } from '../src/helpers/passwordValidator'
 import TextInput from '../src/components/TextInput'
 
 const UserTypeSelectionScreen = ({ navigation,route }) => {
-  var loc = route.params.location.coords.latitude+","+route.params.location.coords.longitude
+  // var loc = route.params.location.coords.latitude+","+route.params.location.coords.longitude
   const handleFarmerRegistration = async () => {
 
     
-    navigation.navigate('Register', { role: 1,location:loc });
+    navigation.navigate('Register', { role: 1 });
   };
 
   const handleCustomerRegistration = () => {
-    navigation.navigate('Register', { role: 0,location:loc });
+    navigation.navigate('Register', { role: 0});
   };
   const handlefarmSpecialistRegistration = () => {
-    navigation.navigate('Register', { role: 2,location:loc });
+    navigation.navigate('Register', { role: 2});
   };
 
   return (

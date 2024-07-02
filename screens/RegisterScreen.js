@@ -19,7 +19,7 @@ const RegistrationScreen = ({ navigation, route }) => {
   const [last_name, setLname] = useState('');
   const [national_id, setID] = useState('');
   const [phone_number, setPhone] = useState('');
-
+  const [locaton, setLocation] = useState('');
   const handleRegistration = async () => {
     try {
       const requestData = {
@@ -31,7 +31,7 @@ const RegistrationScreen = ({ navigation, route }) => {
           national_id,
           phone_number,
           role: route.params.role,
-          location: route.params.location,
+          
         }
       };
 
@@ -65,7 +65,7 @@ const RegistrationScreen = ({ navigation, route }) => {
     } else if (route.params.role === 0) {
       navigation.navigate('CustomerDashboard');
     } else {
-      navigation.navigate('Location');
+      navigation.navigate('Login');
     }
   };
 
@@ -114,6 +114,7 @@ const RegistrationScreen = ({ navigation, route }) => {
           value={phone_number}
           style={styles.input}
         />
+        
         <TouchableOpacity
           style={styles.button}
           mode="contained"

@@ -10,14 +10,14 @@ const AboutScreen = ({ navigation }) => {
     <View style={styles.container}>
       <View style={styles.logoContainer}>
         <Image source={AppLogo} style={styles.logo} />
-        <Text style={styles.appName}>The Orchard</Text>
+        <Text style={styles.appName}>LearnerPro</Text>
       </View>
       <View style={styles.descriptionContainer}>
         <Text style={styles.description}>
-          Welcome to The Orchard, where we connect you to the heart of agriculture. Our mission is to empower consumers and businesses with real-time, up-to-date information on what farmers are offering in the market. We believe in transparency, efficiency, and sustainability in the agricultural supply chain.
+          Welcome to LearnerPro. Gain Access to limitless courses and contact with experienced tutors. We empower students and learners to change the world through knowledge sharing.
         </Text>
         <Text style={styles.description}>
-          With The Orchard, you can make informed decisions, support local farmers, and contribute to a greener future. Join us on this journey of growth, taste the freshness, and nurture a sustainable world.
+          With LearnerPro you can take charge of your education journey by studying a course of your choice from the comfort of your phone. Join us on this journey of growth, learn, and nurture a sustainable world.
         </Text>
       </View>
       <Text style={styles.version}>Version 1.0.0</Text>
@@ -25,7 +25,7 @@ const AboutScreen = ({ navigation }) => {
       <TouchableOpacity
         style={styles.button}
         onPress={() => {
-          navigation.navigate('Location');
+          navigation.navigate('Login');
         }}
       >
         <Text style={styles.buttonText}>Get Started</Text>

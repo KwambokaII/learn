@@ -54,7 +54,7 @@ const LoginScreen = ({ navigation }) => {
         if (user.status.data.role === "farmer") {
           navigation.navigate("FarmerDashboard");
           roleMessage = "Farmer";
-        } else if (user.status.data.role === "customer") {
+        } else if (user.status.data.role === "student") {
           navigation.navigate("CustomerDashboard");
           roleMessage = "Customer";
         } else if (user.status.data.role === "admin") {
@@ -116,7 +116,7 @@ const LoginScreen = ({ navigation }) => {
         </TouchableOpacity>
         <View style={styles.row}>
           <Text>Don’t have an account? </Text>
-          <TouchableOpacity onPress={() => navigation.replace("Location")}>
+          <TouchableOpacity onPress={() => navigation.replace("UserType")}>
             <Text style={styles.link}>Sign up</Text>
           </TouchableOpacity>
         </View>

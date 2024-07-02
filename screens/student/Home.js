@@ -44,9 +44,10 @@ const Home = () => {
 
   const fetchCrops = async () => {
     try {
-      const response = await fetch(url + "/api/crops");
+      const response = await fetch(url + "/apiv1/courses");
       const json = await response.json();
       setCropData(json.data);
+      console.log(json.data);
     } catch (error) {
       alert(error);
     }
@@ -76,58 +77,11 @@ const Home = () => {
                 },
               ]}
             >
-              <Text style={styles.header}>Welcome customer</Text>
-              <Text style={styles.totalFruits}> karan</Text>
+              <Text style={styles.header}>Welcome Student</Text>
+              <Text style={styles.totalFruits}> Ruth</Text>
             </View>
           </View>
-          <View
-            style={{
-              height: 280,
-              backgroundColor: "white",
-              width: 370,
-              alignSelf: "center",
-              borderRadius: 20,
-              marginTop: -180,
-              elevation: 10,
-            }}
-          >
-            <View style={styles.cropGrid}>
-              {cropNames.slice(0, 6).map((cropName, index) => {
-                const totalForCrop = cropData.filter(
-                  (data) => data.attributes.crop_name === cropName
-                ).length;
-                return (
-                  <View key={index} style={styles.cropContainer}>
-                    <Text style={styles.cropName}> {cropName} </Text>
-                    <Image
-                      style={styles.cropImage}
-                      source={cropImageMapping[cropName]} // Set the image source based on the crop name
-                    />
-                    <View></View>
-                    <TouchableOpacity
-                      style={{
-                        backgroundColor: "white",
-                        borderRadius: 10,
-                        padding: 2,
-                        width: 90,
-                        flexDirection: "row",
-                        alignItems: "center",
-                        justifyContent: "space-evenly",
-                        alignSelf: "center",
-                      }}
-                    >
-                      {/* <Text style={styles.cropTotal}>Add to Cart</Text> */}
-                      <Text style={styles.cropTotal}>$100</Text>
-                      <Image
-                        source={catimg}
-                        style={{ width: 30, height: 30 }}
-                      />
-                    </TouchableOpacity>
-                  </View>
-                );
-              })}
-            </View>
-          </View>
+         
           <Text style={styles.featured}>featured</Text>
           <ScrollView
             showsHorizontalScrollIndicator={false}
