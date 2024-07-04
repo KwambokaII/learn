@@ -24,13 +24,13 @@ const cropImageMapping = {
 };
 
 const cropNames = [
-  "Beans",
-  "Passion fruits",
-  "Banana",
-  "Maize",
-  "Tea",
-  "Sugarcane",
-  "Avocado",
+  "Economics",
+  "Writing",
+  "Reading",
+  "Mathematics",
+  "English",
+  "Agriculture",
+  "Science",
 ];
 
 const Home = () => {

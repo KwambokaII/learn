@@ -10,9 +10,9 @@ import { theme } from "../src/core/theme";
 
 const Contact = () => {
   const phone = "+254788987654";
-  const email = "info@smartfruitfarmer.com";
+  const email = "info@learnerpro.com";
   const [about, setAbout] = useState(
-    "At The Orchard, we connect you to the heart of agriculture. Our mission is simple: to empower consumers and businesses with real-time, up-to-date information on what farmers are offering in the market. We believe in transparency, efficiency, and sustainability in the agricultural supply chain. With The Orchard, you can make informed decisions, support local farmers, and contribute to a greener future. Join us on this journey of growth, taste the freshness, and nurture a sustainable world. Welcome to The Orchard."
+    "With LearnerPro you can take charge of your education journey by studying a course of your choice from the comfort of your phone. Join us on this journey of growth, learn, and nurture a sustainable world."
   );
 
   const handlePhonePress = () => {
