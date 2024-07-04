@@ -31,7 +31,7 @@ const UserTypeSelectionScreen = ({ navigation,route }) => {
     <Background>
       <BackButton goBack={navigation.goBack} />
       <Logo />
-    <Header>The Orchard</Header>
+    <Header>LearnerPro</Header>
     <Paragraph >
       Why are you here?.
     </Paragraph>
@@ -41,24 +41,24 @@ const UserTypeSelectionScreen = ({ navigation,route }) => {
       title="Farmer" onPress={handleFarmerRegistration}
         // onPress={handleLogin}
       >
-        <Text style={styles.buttonText}>Farmer</Text>
+        <Text style={styles.buttonText}>Student</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.button}
         mode="outlined"
-      title="Customer" onPress={handleCustomerRegistration}
+      title="student" onPress={handleCustomerRegistration}
         // onPress={handleLogin}
       >
-        <Text style={styles.buttonText}>Customer</Text>
+        <Text style={styles.buttonText}>Teacher</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.button}
         mode="outlined"
-      title="Farmer" onPress={handlefarmSpecialistRegistration}
+      title="teacher" onPress={handlefarmSpecialistRegistration}
         // onPress={handleLogin}
       >
-        <Text style={styles.buttonText}>Farm Support</Text>
-      </TouchableOpacity>
+        {/* <Text style={styles.buttonText}>Farm Support</Text>
+      </TouchableOpacity> */}
     {/* <Button
       mode="outlined"
       title="Farmer" onPress={handleFarmerRegistration}
@@ -71,9 +71,9 @@ const UserTypeSelectionScreen = ({ navigation,route }) => {
     >
       Buyer
     </Button> */}
-  </Background>
+  {/* </Background>
   );
-};
+}; */}
 
 const styles = StyleSheet.create({
   container: {
