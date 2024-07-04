@@ -38,7 +38,7 @@ const UserTypeSelectionScreen = ({ navigation,route }) => {
     <TouchableOpacity
         style={styles.button}
         mode="outlined"
-      title="Farmer" onPress={handleFarmerRegistration}
+      title="student" onPress={handleFarmerRegistration}
         // onPress={handleLogin}
       >
         <Text style={styles.buttonText}>Student</Text>
@@ -46,17 +46,17 @@ const UserTypeSelectionScreen = ({ navigation,route }) => {
       <TouchableOpacity
         style={styles.button}
         mode="outlined"
-      title="student" onPress={handleCustomerRegistration}
+      title="teacher" onPress={handleCustomerRegistration}
         // onPress={handleLogin}
       >
         <Text style={styles.buttonText}>Teacher</Text>
       </TouchableOpacity>
-      <TouchableOpacity
+      {/* <TouchableOpacity
         style={styles.button}
         mode="outlined"
       title="teacher" onPress={handlefarmSpecialistRegistration}
         // onPress={handleLogin}
-      >
+      > */}
         {/* <Text style={styles.buttonText}>Farm Support</Text>
       </TouchableOpacity> */}
     {/* <Button
@@ -71,9 +71,9 @@ const UserTypeSelectionScreen = ({ navigation,route }) => {
     >
       Buyer
     </Button> */}
-  {/* </Background>
+   </Background>
   );
-}; */}
+};
 
 const styles = StyleSheet.create({
   container: {

@@ -51,20 +51,20 @@ const LoginScreen = ({ navigation }) => {
         let roleMessage = "";
         console.log(user ,'useer  . .. ');
 
-        if (user.status.data.role === "farmer") {
-          navigation.navigate("FarmerDashboard");
+        if (user.status.data.role === "teacher") {
+          navigation.navigate("TeacherDashboardScreen");
           roleMessage = "Farmer";
         } else if (user.status.data.role === "student") {
-          navigation.navigate("CustomerDashboard");
+          navigation.navigate("student");
           roleMessage = "Customer";
         } else if (user.status.data.role === "admin") {
           navigation.navigate("AdminDashboard");
           roleMessage = "Admin";
         }
-        else if (user.status.data.role === "farm_specialist") {
-          navigation.navigate("Special");
-          roleMessage = "farm specialist";
-        }
+        // else if (user.status.data.role === "farm_specialist") {
+        //   navigation.navigate("Special");
+        //   roleMessage = "farm specialist";
+        // }
 
         // Alert the name of the logged-in user
         const userName = `${user.status.data.first_name} ${user.status.data.last_name}`;
