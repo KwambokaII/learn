@@ -44,12 +44,12 @@ const App = () => {
           options={{ title: 'Login', headerShown: false }}
         />
         <Stack.Screen
-          name="CustomerDashboard"
+          name="Student"
           component={CustomersDashboardScreen}
           options={{ title: 'Dashboard', headerShown: false }}
         />
         <Stack.Screen
-          name="FarmerDashboard"
+          name="Teacher"
           component={FarmerDashboardScreen}
           options={{ title: 'Dashboard', headerShown: false }}
         />

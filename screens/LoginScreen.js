@@ -52,11 +52,11 @@ const LoginScreen = ({ navigation }) => {
         console.log(user ,'useer  . .. ');
 
         if (user.status.data.role === "teacher") {
-          navigation.navigate("TeacherDashboardScreen");
-          roleMessage = "Farmer";
+          navigation.navigate("Teacher");
+          roleMessage = "Teacher";
         } else if (user.status.data.role === "student") {
-          navigation.navigate("student");
-          roleMessage = "Customer";
+          navigation.navigate("Student");
+          roleMessage = "Student";
         } else if (user.status.data.role === "admin") {
           navigation.navigate("AdminDashboard");
           roleMessage = "Admin";
