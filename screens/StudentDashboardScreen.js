@@ -15,8 +15,8 @@ import {
 } from "@react-navigation/drawer";
 import User from "./../assets/person.png";
 import Contact from "./Contact";
-import FarmerLocationScreen from "./student/FarmerLocationScreen";
-import CropsScreen from "./student/Courses";
+import courseList from "./student/courseList";
+import Courses from "./student/Courses";
 import Home from "./student/Home";
 import RateApp from "./RateApp";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -25,7 +25,7 @@ import ShareAppScreen from "./ShareAppScreen";
 var url = base.BASE_URL;
 import * as base from "../env";
 import cartScreen from "./student/cartScreen";
-import ProductScreen from "./student/ProductScreen";
+// import ProductScreen from "./student/ProductScreen";
 
 const Drawer = createDrawerNavigator();
 

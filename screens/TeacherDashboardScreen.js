@@ -17,7 +17,7 @@ import UserCrops from "./teacher/UserCrops";
 import Contact from "./Contact";
 import Home from "./teacher/Home";
 import RateApp from "./RateApp";
-import CropsScreen from "./teacher/CropsScreen";
+// import IssuesScreen from "./teacher/IssuesScreen";
 import ProductScreen from "./teacher/ProductScreen";
 import Button from "../src/components/Button";
 import AsyncStorage from "@react-native-async-storage/async-storage";

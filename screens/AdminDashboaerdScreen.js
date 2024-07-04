@@ -15,9 +15,8 @@ import User from "./../assets/person.png";
 import Contact from "./Contact";
 import Home from "./Home";
 import RateApp from "./RateApp";
-import FarmersScreen from './admin/FarmerScreen'
-import CustomersScreen from './admin/CustomerScreen'
-import CropsScreen from './admin/CropsScreen'
+import Student from './admin/Student'
+import Teacher from './admin/Teacher'
 import * as base from '../env'
 import ShareAppScreen from "./ShareAppScreen"
 import Button from "../src/components/Button";
