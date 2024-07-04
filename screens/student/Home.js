@@ -60,14 +60,14 @@ const Home = () => {
           <View
             style={{
               height: 330,
-              backgroundColor: "#2d4c35",
+              backgroundColor: theme.colors.primary,
               borderBottomLeftRadius: 80,
               borderBottomRightRadius: 80,
             }}
           >
             <View
               style={[
-                styles.bcontainer,
+                styles.container,
                 {
                   flexDirection: "row",
                   paddingHorizontal: 15,
@@ -84,8 +84,8 @@ const Home = () => {
          
           <Text style={styles.featured}>featured</Text>
           <ScrollView
-            showsHorizontalScrollIndicator={false}
-            horizontal
+            showsverticalScrollIndicator={false}
+            vertical
             style={{
               height: 150,
               marginTop: 20,
@@ -109,7 +109,7 @@ const Home = () => {
                         borderRadius: 10,
                         padding: 2,
                         width: 90,
-                        flexDirection: "row",
+                        flexDirection: "column",
                         alignItems: "center",
                         justifyContent: "space-evenly",
                         alignSelf: "center",
@@ -129,7 +129,7 @@ const Home = () => {
           <View
             style={{
               height: 180,
-              backgroundColor: "#2d4c35",
+              backgroundColor: theme.colors.primary,
               borderTopRightRadius: 120,
               borderTopLeftRadius: 120,
               marginTop: 20,
@@ -200,7 +200,7 @@ const styles = StyleSheet.create({
   },
   featured: {
     marginTop: 20,
-    marginHorizontal: 20,
+    marginVertical: 20,
     fontSize: 20,
     fontWeight: "bold",
     textTransform: "capitalize",

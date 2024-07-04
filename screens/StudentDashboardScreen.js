@@ -158,13 +158,13 @@ export default function CustomersDashboardScreen({ navigation }) {
         }}
         screenOptions={{
           drawerStyle: {
-            backgroundColor: "#528508",
+            backgroundColor: "#964B00",
             width: 250,
             borderWidth : 1,
             borderBottomColor : 'black'
           },
           headerStyle: {
-            backgroundColor: "#528508",
+            backgroundColor: "#964B00",
           },
           headerTintColor: "#fff",
           headerTitleStyle: {
@@ -199,11 +199,11 @@ export default function CustomersDashboardScreen({ navigation }) {
           component={Home}
         />
         <Drawer.Screen
-          name="Products"
+          name="Courses"
           options={{
-            drawerLabel: "Products",
+            drawerLabel: "Courses",
             color: "#ffffff",
-            title: "Products",
+            title: "My Courses",
             drawerIcon: () => (
               <MaterialIcons name="shopping-basket" size={20} color="#fff" />
             ),
