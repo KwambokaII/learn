@@ -218,7 +218,7 @@ export default function CustomersDashboardScreen({ navigation }) {
               </TouchableOpacity>
             ),
           }}
-          component={ProductScreen}
+          component={Courses}
         />
         {/* <Drawer.Screen
           name="Farmer Location"

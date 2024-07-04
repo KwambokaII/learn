@@ -61,9 +61,9 @@ const RegistrationScreen = ({ navigation, route }) => {
   const handleNavigation = () => {
     // Navigate based on the role parameter
     if (route.params.role === 1) {
-      navigation.navigate('FarmerDashboard');
+      navigation.navigate('Teacher');
     } else if (route.params.role === 0) {
-      navigation.navigate('CustomerDashboard');
+      navigation.navigate('Student');
     } else {
       navigation.navigate('Login');
     }
@@ -118,7 +118,7 @@ const RegistrationScreen = ({ navigation, route }) => {
         <TouchableOpacity
           style={styles.button}
           mode="contained"
-          title="Farmer" onPress={handleRegistration}
+          title="Teacher" onPress={handleRegistration}
         // onPress={handleLogin}
       >
         <Text style={styles.buttonText}>Sign Up</Text>
